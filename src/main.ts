@@ -3,7 +3,7 @@ import { createPinia } from "pinia";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { DefaultApolloClient } from "@vue/apollo-composable";
 
-import App from "./App.vue";
+import App from "./App";
 import router from "./router";
 
 const defaultClient = new ApolloClient({
