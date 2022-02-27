@@ -13,6 +13,7 @@ const { result } = useQuery(characters);
 
 const allCharacters = useResult(result, null, (data) => data.characters);
 
+
 </script>
 
 <style>

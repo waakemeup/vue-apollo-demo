@@ -6,10 +6,17 @@ import AboutView from "./views/AboutView.vue";
 /* export default defineComponent({
   render() {
     const message = "This is Message";
+    const { result } = useQuery(characters);
+    let allCharacters;
+    onBeforeMount(() => {
+      allCharacters = useResult(result, null, (data) => data.characters);
+    });
+
     return (
       <>
         Hello Vue TSX
         <h2>{message}</h2>
+        <div>{allCharacters}</div>
       </>
     );
   },
@@ -33,6 +40,8 @@ export default defineComponent({
     const allCharacters = useResult(result, null, (data) => data.characters);
     console.log("value: ", allCharacters);
 
+    let counter = ref<number>(1);
+
     return () => (
       <>
         Hello Vue TSX
@@ -43,10 +52,18 @@ export default defineComponent({
         >
           {message.value}
         </p>
-        <h3 /* style={{ color: "red", backgroundColor: "blue", height: "30vh" }} */
+        <h3
+          // style={{ color: "red", backgroundColor: "blue", height: "30vh" }}
+          onClick={() => {
+            counter.value++;
+            // allCharacters.value = counter;
+          }}
         >
-          {allCharacters.value}
-          This is Text
+          {counter.value}
+          <br />
+          <span style={{ fontFamily: "monaco" }}>
+            {JSON.stringify(allCharacters.value, null, 2)}
+          </span>
         </h3>
         <AboutView />
       </>
