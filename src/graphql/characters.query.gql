@@ -2,6 +2,7 @@ query allCharacters {
   characters {
     results {
       name
+      id
     }
   }
 }

@@ -2,6 +2,7 @@ import { createApp, h, provide } from "vue";
 import { createPinia } from "pinia";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { DefaultApolloClient } from "@vue/apollo-composable";
+import "./index.css";
 
 import App from "./App";
 import router from "./router";
