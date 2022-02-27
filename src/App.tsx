@@ -1,6 +1,7 @@
 import { defineComponent, onMounted, onUpdated, ref } from "vue";
-import { useQuery } from "@vue/apollo-composable";
+import { useQuery, useResult } from "@vue/apollo-composable";
 import characters from "./graphql/characters.query.gql";
+import AboutView from "./views/AboutView.vue";
 
 /* export default defineComponent({
   render() {
@@ -24,6 +25,14 @@ export default defineComponent({
     onUpdated(() => {
       console.log(message);
     });
+
+    const { result } = useQuery(characters);
+
+    console.log("result: ", result);
+
+    const allCharacters = useResult(result, null, (data) => data.characters);
+    console.log("value: ", allCharacters);
+
     return () => (
       <>
         Hello Vue TSX
@@ -34,6 +43,12 @@ export default defineComponent({
         >
           {message.value}
         </p>
+        <h3 /* style={{ color: "red", backgroundColor: "blue", height: "30vh" }} */
+        >
+          {allCharacters.value}
+          This is Text
+        </h3>
+        <AboutView />
       </>
     );
   },
