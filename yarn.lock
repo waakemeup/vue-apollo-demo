@@ -571,6 +571,15 @@
     vscode-nls "^5.0.0"
     vscode-uri "^2.1.2"
 
+"@vue/apollo-composable@^4.0.0-alpha.16":
+  version "4.0.0-alpha.16"
+  resolved "https://registry.yarnpkg.com/@vue/apollo-composable/-/apollo-composable-4.0.0-alpha.16.tgz#f0974372b07b016271a96425c3f676588e640bf4"
+  integrity sha512-P0Zxip0idW7HAkLAmvtso+UNdTNCm+mwAKvw9Nup4MzESDvfuvhXfOxYPZCKtd4Y8fS1FZ0dBGbOrxeQHYyfwQ==
+  dependencies:
+    throttle-debounce "^3.0.1"
+    ts-essentials "^9.0.0"
+    vue-demi "^0.12.1"
+
 "@vue/babel-helper-vue-transform-on@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-transform-on/-/babel-helper-vue-transform-on-1.0.2.tgz#9b9c691cd06fc855221a2475c3cc831d774bc7dc"
@@ -2128,6 +2137,11 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+throttle-debounce@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-3.0.1.tgz#32f94d84dfa894f786c9a1f290e7a645b6a19abb"
+  integrity sha512-dTEWWNu6JmeVXY0ZYoPuH5cRIwc0MeGbJwah9KUNYSJwommQpCzTySTpEe8Gs1J23aeWEuAobe4Ag7EHVt/LOg==
+
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
@@ -2144,6 +2158,11 @@ token-stream@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/token-stream/-/token-stream-1.0.0.tgz#cc200eab2613f4166d27ff9afc7ca56d49df6eb4"
   integrity sha1-zCAOqyYT9BZtJ/+a/HylbUnfbrQ=
+
+ts-essentials@^9.0.0:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-9.1.2.tgz#46db6944b73b4cd603f3d959ef1123c16ba56f59"
+  integrity sha512-EaSmXsAhEiirrTY1Oaa7TSpei9dzuCuFPmjKRJRPamERYtfaGS8/KpOSbjergLz/Y76/aZlV9i/krgzsuWEBbg==
 
 ts-invariant@^0.9.4:
   version "0.9.4"
@@ -2343,7 +2362,7 @@ vscode-vue-languageservice@0.31.4:
     vscode-pug-languageservice "0.31.4"
     vscode-typescript-languageservice "0.31.4"
 
-vue-demi@*:
+vue-demi@*, vue-demi@^0.12.1:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.1.tgz#f7e18efbecffd11ab069d1472d7a06e319b4174c"
   integrity sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==
